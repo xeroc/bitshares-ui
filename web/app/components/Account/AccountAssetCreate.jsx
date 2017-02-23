@@ -550,6 +550,7 @@ class AccountAssetCreate extends React.Component {
 
                                 <div style={{marginBottom: 10}} className="txtlabel cancel"><Translate content="account.user_issued_assets.precision_warning" /></div>
 
+                                {/*
                                 <table className="table" style={{width: "inherit"}}>
                                     <tbody>
                                         <tr>
@@ -578,8 +579,10 @@ class AccountAssetCreate extends React.Component {
                                         </tr>
                                     </tbody>
                                 </table>) : null}
+                               */}
 
                                 {/* CER */}
+                                {/*
                                 <Translate component="h3" content="account.user_issued_assets.core_exchange_rate" />
 
                                 <label>
@@ -626,6 +629,7 @@ class AccountAssetCreate extends React.Component {
                                         </h5>
                                     </div>
                                 </label>
+                                */}
                             </div>
                         </Tab>
 
@@ -759,9 +763,11 @@ class AccountAssetCreate extends React.Component {
                         <button className="button outline" onClick={this._reset.bind(this)} value={counterpart.translate("account.perm.reset")}>
                             <Translate content="account.perm.reset" />
                         </button>
+                        {/*
                         <br/>
                         <br/>
                         <p><Translate content="account.user_issued_assets.approx_fee" />: {createFee}</p>
+                       */}
                     </div>
 
                 </div>

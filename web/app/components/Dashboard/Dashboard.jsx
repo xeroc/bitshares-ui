@@ -6,7 +6,7 @@ import Translate from "react-translate-component";
 import MarketCard from "./MarketCard";
 import utils from "common/utils";
 import { Apis } from "bitsharesjs-ws";
-var logo = require("assets/logo-ico-blue.png");
+var logo = "images/logo.png";
 import LoadingIndicator from "../LoadingIndicator";
 
 class Dashboard extends React.Component {
@@ -144,12 +144,16 @@ class Dashboard extends React.Component {
                     <div ref="container" className="grid-block vertical medium-horizontal"  style={{padding: "25px 10px 0 10px"}}>
                         <div className="grid-block vertical small-12 medium-5">
                             <div className="Dashboard__intro-text">
-                                <h4><img style={{position: "relative", top: -15, margin: 0}} src={logo}/><Translate content="account.intro_text_title" /></h4>
+                                <h4><Translate content="account.intro_text_title" /></h4>
 
                                 <Translate unsafe content="account.intro_text_1" component="p" />
                                 <Translate unsafe content="account.intro_text_2" component="p" />
                                 <Translate unsafe content="account.intro_text_3" component="p" />
-                                <Translate content="account.intro_text_4" component="p" />
+                                <Translate unsafe content="account.intro_text_4" component="p" />
+                                <Translate unsafe content="account.intro_text_5" component="p" />
+                                <Translate unsafe content="account.intro_text_6" component="p" />
+                                <Translate unsafe content="account.intro_text_7" component="p" />
+                                <Translate unsafe content="account.intro_text_8" component="p" />
 
                                 <div className="button create-account" onClick={() => {this.props.router.push("create-account");}}>
                                     <Translate content="header.create_account" />
@@ -157,10 +161,9 @@ class Dashboard extends React.Component {
                             </div>
                         </div>
                         <div className="grid-container small-12 medium-7" style={{paddingTop: 44}}>
-                            <Translate content="exchange.featured" component="h4" style={{paddingLeft: 30}}/>
-                            <div className="grid-block small-up-2 medium-up-3 large-up-4 no-overflow">
-                                {markets}
-                            </div>
+                          <center>
+                           <img style={{width: "80%", margin: 5}} src="https://scnrfp.bitshares.eu/images/logo.png" />
+                          </center>
                         </div>
                     </div>
                 </div>
