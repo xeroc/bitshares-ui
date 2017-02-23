@@ -364,6 +364,9 @@ class CreateAccount extends React.Component {
                         </h4>
                     </div>
                 </div>
+                <div className="content-block center-content">
+                 <img src={"images/logo.png"} style={{width:"13em"}} />
+                </div>
                 <div className="grid-block main-content wrap" style={{marginTop: "2rem"}}>
                     <div className="grid-content small-12 medium-6" style={{paddingLeft: "15%"}}>
                         <p style={{fontWeight: "bold"}}>

@@ -7,3 +7,4 @@ require("whatwg-fetch");
 require("indexeddbshim");
 require("./asset-symbols/symbols.js");
 require("./locales/locales.js");
+require("./images/images.js");
